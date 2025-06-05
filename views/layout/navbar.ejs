@@ -1,0 +1,19 @@
+
+
+<nav style="padding-left: 0px; gap: 0;" >
+
+  <a href="/"><h2 id="NITKKR" style="color: black; " ><img src="/images/logo1.png" alt="" width="90px" ></h2></a>
+  <ul id="nav-links" style="font-weight: 600; gap: 0px; margin-left: -20px;">
+    <% if (user) { %>
+      <li><a href="/">Home</a></li>
+      <li><a href="/user/profile">Profile</a></li>
+      <!-- <li><a href="/admin/profile">Manage Users</a></li> -->
+      <li><a href="/auth/logout">Logout</a></li>
+    <% } else { %>
+      <li><a href="/">Home</a></li>
+      <li><a href="/auth/register">Register</a></li>
+      <li><a href="/auth/login">Login</a></li>
+    <% } %>  <!-- Correctly close the if-else block -->
+  </ul>
+</nav>
+
